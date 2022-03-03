@@ -69,6 +69,27 @@ int main()
             cout << endl;
             isRunning = false;
         }
+	
+		if (userinput == "set") {
+        	int userX;
+        	int userY;
+        	
+        	cin >> userX;
+        	cin >> userY;
+        	
+        	if (userX < 0 || userX >= sizeX || userY < 0 || userY >= sizeY) {
+        		cout << "value out of reach, try again \n";
+        	} else {
+        	
+        	
+	        	if (field1.array[userY][userX] == '.') {
+	        		field1.array[userY][userX] = '#';
+	        	} else {
+	        		field1.array[userY][userX] = '.';
+	        	}
+        	}
+        	
+        }
 
         if (userinput == "run") {
             cout << endl;
