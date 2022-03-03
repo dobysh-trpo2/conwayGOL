@@ -32,7 +32,7 @@ int main()
     cin >> sizeY;
 
     field1.sizeX = sizeX;
-    field1.sizeY = sizeY
+    field1.sizeY = sizeY;
     buffer1.sizeX = sizeX;
     buffer1.sizeY = sizeY;
 
